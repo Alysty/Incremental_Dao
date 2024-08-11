@@ -8,7 +8,7 @@ pub struct GeneralReportError {
 
 impl fmt::Display for GeneralReportError {
     fn fmt(&self, fmt: &mut fmt::Formatter<'_>) -> fmt::Result {
-        fmt.write_str("")
+        fmt.write_str(&self.original_message)
     }
 
 
